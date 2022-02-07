@@ -1,9 +1,7 @@
-# Bezier.js
+# MathBezier.js
 
-:warning:
-**This package needs your support to stay maintained.** If you work for an organization
-whose website is better off using Bezier.js than rolling its own code
-solution, please consider talking to your manager to help
+We are migrating Bezier.js to the new MathBezier.js using mathjs.  A work in progress, the original Bezier.js is still in this repo and will remain until the project has been completely migrated.
+
 [fund this project](https://www.paypal.com/donate/?cmd=_s-xclick&hosted_button_id=QPRDLNGDANJSW).
 Open Source is free to use, but certainly not free to develop. If you have the
 means to reward those whose work you rely on, please consider doing so.
