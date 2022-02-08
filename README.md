@@ -1,54 +1,38 @@
-# MathBezier.js
+# BezierMath.js
 
-We are migrating Bezier.js to the new MathBezier.js using mathjs.  A work in progress, the original Bezier.js is still in this repo and will remain until the project has been completely migrated.
+We are migrating BezierMath.js from Bezier.js implementing mathjs.  The work is just beinning and not yet usable but we expect rapid development with at least the core functions my end of March (2022). The original Bezier.js is still in this repo and will remain until the project has been completely migrated.
 
-[fund this project](https://www.paypal.com/donate/?cmd=_s-xclick&hosted_button_id=QPRDLNGDANJSW).
-Open Source is free to use, but certainly not free to develop. If you have the
-means to reward those whose work you rely on, please consider doing so.
-:warning:
+In the meantime, for a finished and complete version check out the original at [pomax.github.io/bezierjs](http://pomax.github.io/bezierjs).
 
 An ES Module based library for Node.js and browsers for doing (quadratic and cubic) Bezier curve work.
 
 For a Demo and the API, hit up either [pomax.github.io/bezierjs](http://pomax.github.io/bezierjs) or read the souce (`./src` for the library code, start at `bezier.js`).
 
-**Note:** if you're looking for the legacy ES5 version of this library, you will have to install v2.6.1 or below. However, be aware that the ES5 version will not have any fixes/updates back-ported.
-
 ## Installation
 
-`npm install bezier-js` will add bezier.js to your dependencies, remember to add `--save` or `--save-dev` if you need that to be persistent of course.
+clone it!  More details later/
 
 ### Without using a package manager
 
-There is a rolled-up version of `bezier.js` in the `dist` directory. Just [download that](https://raw.githubusercontent.com/Pomax/bezierjs/master/dist/bezier.js) and drop it in your JS asset dir.
+There is a rolled-up version of `beziermath.js` or `beziermath,min.js` in the `dist` directory. Just download that and drop it into your module or scipts directory.
 
 ## In Node, as dependency
 
 About as simple as it gets:
 
 ```
-import { Bezier } from "bezier-js";
+import { BezierMath as bm } from "beziermath";
 
-const b = new Bezier(...);
+const b = new bm.Bezier(...);
 ```
 
 Or, using the legacy CommonJS syntax:
 
 ```
-const Bezier = require("bezier-js");
+const bm = require("beziermath");
 
-const b = new Bezier(...);
+const b = new bm.Bezier(...);
 ```
-
-### Node support matrix
-
-| Node Version | Require Supported | Import Supported                    |
-| ------------ | ----------------- | ----------------------------------- |
-| v12.0.0      | Yes               | Yes <sup>Experimental Flag</sup>    |
-| v12.14.1     | Yes               | No <sup>Experimental Flag</sup>     |
-| v12.17.0     | Yes               | Yes <sup>Experimental Warning</sup> |
-| v12.22.1     | Yes               | Yes                                 |
-| v14.0.0      | Yes               | Yes                                 |
-| v14.16.1     | Yes               | Yes                                 |
 
 ## In Node or the browser, from file
 
@@ -62,7 +46,7 @@ const b = new Bezier(...);
 
 ## Working on the code
 
-All the code is in the `src` directory, with `bezier.js` as entry point.
+All the code is in the `src` directory, with `beziermath.js` as entry point.
 
 To test code (which automatically applies code formatting and rollup), use `npm test`.
 
@@ -74,4 +58,4 @@ This code is MIT licensed.
 
 ## Engagement
 
-For comments and questions, [tweet at me](https://twitter.com/TheRealPomax) or file an issue.
+For comments and questions, file an issue.
